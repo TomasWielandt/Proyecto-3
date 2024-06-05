@@ -10,7 +10,7 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <nav class="navbar navbar-expand-md fixed-top navbar-dark bg-dark">
             <div class="container-fluid">
                 <a class="navbar-brand" href="javascript:void(0)" title="Inicio">
                     <img src="/images/logo/27327071dbda49a7be8416b498da5faa.png" alt="Logo Metal Mercenaries">
@@ -81,8 +81,75 @@
             </div>
         </div>
     </main>
-    <section id="products">
-
+    <section>
+        <h2>Algunos de nuestros músicos destacados</h2>
+        <div id="productos" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#productos" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#productos" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#productos" data-bs-slide-to="2"></button>
+                <button type="button" data-bs-target="#productos" data-bs-slide-to="3"></button>
+                <button type="button" data-bs-target="#productos" data-bs-slide-to="4"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="images/russellAllen.jpg" alt="Russell Allen" class="d-block">
+                    <div class="carousel-caption">
+                        <h3>Russell Allen</h3>
+                        <a href="javascript:void(0)">
+                            <button type="button" class="btn btn-primary">Ver Perfil</button>
+                        </a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/johnPetrucci.avif" alt="John Petrucci" class="d-block">
+                    <div class="carousel-caption">
+                        <h3>John Petrucci</h3>
+                        <a href="javascript:void(0)">
+                            <button type="button" class="btn btn-primary">Ver Perfil</button>
+                        </a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/steveHarris.jpg" alt="Steve Harris" class="d-block">
+                    <div class="carousel-caption">
+                        <h3>Steve Harris</h3>
+                        <a href="javascript:void(0)">
+                            <button type="button" class="btn btn-primary">Ver Perfil</button>
+                        </a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/jensJohansson.jpg" alt="Jens Johansson" class="d-block">
+                    <div class="carousel-caption">
+                        <h3>Jens Johansson</h3>
+                        <a href="javascript:void(0)">
+                            <button type="button" class="btn btn-primary">Ver Perfil</button>
+                        </a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/mikePortnoy.jpg" alt="Mike Portnoy" class="d-block">
+                    <div class="carousel-caption">
+                        <h3>Mike Portnoy</h3>
+                        <a href="javascript:void(0)">
+                            <button type="button" class="btn btn-primary">Ver Perfil</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#productos" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#productos" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            </button>
+        </div>
+        <div id="btn-ver-mas">
+            <a href="javascript:void(0)">
+                <button type="button" class="btn btn-primary ver-mas">Ver Más</button>
+            </a> 
+        </div>         
     </section>
     <footer>
 
