@@ -100,6 +100,24 @@ h2 {
     margin: 20px 0;
 }
 
+#banner {
+    background-color: black;  
+    display: flex;
+    justify-content: center;
+}
+
+#banner a {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+}
+
+#banner a img{
+    width: 100%;
+}
+
+
+
 
 
 
