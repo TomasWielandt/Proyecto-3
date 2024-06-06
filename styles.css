@@ -15,8 +15,20 @@ nav {
     opacity: 1;
 }
 
+.nav-item {
+    margin: auto 0;
+}
+
 .dropdown-menu-dark {
     border: none !important; 
+}
+
+.d-flex {
+    padding-top: 20px;
+}
+
+header .btn {
+    height: 100% !important;
 }
 
 /* main */
@@ -105,17 +117,6 @@ h2 {
     text-shadow: -2px 2px 0 rgba(0, 0, 0, 0.5);
 }
 
-/* #btn-ver-mas {
-    display: flex;
-    justify-content: right;
-    margin-right: 20%;
-}
-
-.ver-mas {
-    border: 1px solid black !important;
-    margin: 20px 0;
-} */
-
 /* banner */
 #banner {
     background-color: black;  
@@ -133,7 +134,36 @@ h2 {
     width: 100%;
 }
 
-/* Footer */
+/* formulario contacto */
+.form-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px 50px;
+}
+
+.form-container p {
+    font-size: 20px;
+}
+
+form label {
+    display: block;
+    font-weight: bold;
+}
+
+form input, form textarea {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid rgb(33, 37, 41);
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+form .btn {
+    border: 1px solid rgb(33, 37, 41);
+}
+
+/* footer */
 footer {
     background-color: rgb(33, 37, 41);
     color: white;

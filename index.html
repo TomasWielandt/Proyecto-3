@@ -30,19 +30,19 @@
                             <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="javascript:void(0)">Músicos</a>
                             <ul class="dropdown-menu dropdown-menu-dark bg-dark">
                                 <li>
-                                    <a class="dropdown-item" href="javascript:void(0)">Vocalistas</a>
+                                    <a class="dropdown-item" href="#carrusel-productos">Vocalistas</a>
                                 </li>
                                 <li>
-                                    <a class="dropdown-item" href="javascript:void(0)">Guitarristas</a>
+                                    <a class="dropdown-item" href="#carrusel-productos">Guitarristas</a>
                                 </li>
                                 <li>
-                                    <a class="dropdown-item" href="javascript:void(0)">Bajistas</a>
+                                    <a class="dropdown-item" href="#carrusel-productos">Bajistas</a>
                                 </li>
                                 <li>
-                                    <a class="dropdown-item" href="javascript:void(0)">Tecladistas</a>
+                                    <a class="dropdown-item" href="#carrusel-productos">Tecladistas</a>
                                 </li>
                                 <li>
-                                    <a class="dropdown-item" href="javascript:void(0)">Bateristas</a>
+                                    <a class="dropdown-item" href="#carrusel-productos">Bateristas</a>
                                 </li>
                             </ul>
                         </li>
@@ -50,7 +50,7 @@
                             <a class="nav-link" href="javascript:void(0)">FAQ</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="javascript:void(0)">Contacto</a>
+                            <a class="nav-link" href="#formulario">Contacto</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="javascript:void(0)">Ingresar</a>
@@ -66,7 +66,7 @@
                     </ul>
                     <form class="d-flex">
                         <input class="form-control me-2" type="text" placeholder="Buscar">
-                        <button class="btn btn-primary" type="button">Buscar</button>
+                        <button id="busqueda" class="btn btn-primary" type="button">Buscar</button>
                     </form>
                 </div>             
             </div>
@@ -104,9 +104,6 @@
                         <img src="images/russellAllen.jpg" alt="Russell Allen" class="d-block">
                         <div class="carousel-caption">
                             <h3>Russell Allen</h3>
-                            <!-- <a href="javascript:void(0)">
-                                <button type="button" class="btn btn-primary">Ver Perfil</button>
-                            </a> -->
                         </div>
                     </a>                  
                 </div>
@@ -115,9 +112,6 @@
                         <img src="images/johnPetrucci.avif" alt="John Petrucci" class="d-block">
                         <div class="carousel-caption">
                             <h3>John Petrucci</h3>
-                            <!-- <a href="javascript:void(0)">
-                                <button type="button" class="btn btn-primary">Ver Perfil</button>
-                            </a> -->
                         </div>
                     </a>                  
                 </div>
@@ -126,9 +120,6 @@
                         <img src="images/steveHarris.jpg" alt="Steve Harris" class="d-block">
                         <div class="carousel-caption">
                             <h3>Steve Harris</h3>
-                            <!-- <a href="javascript:void(0)">
-                                <button type="button" class="btn btn-primary">Ver Perfil</button>
-                            </a> -->
                         </div>
                     </a>                    
                 </div>
@@ -137,9 +128,6 @@
                         <img src="images/jensJohansson.jpg" alt="Jens Johansson" class="d-block">
                         <div class="carousel-caption">
                             <h3>Jens Johansson</h3>
-                            <!-- <a href="javascript:void(0)">
-                                <button type="button" class="btn btn-primary">Ver Perfil</button>
-                            </a> -->
                         </div>
                     </a>                   
                 </div>
@@ -148,9 +136,6 @@
                         <img src="images/mikePortnoy.jpg" alt="Mike Portnoy" class="d-block">
                         <div class="carousel-caption">
                             <h3>Mike Portnoy</h3>
-                            <!-- <a href="javascript:void(0)">
-                                <button type="button" class="btn btn-primary">Ver Perfil</button>
-                            </a> -->
                         </div>
                     </a>                  
                 </div>
@@ -162,11 +147,6 @@
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
             </button>
         </div>
-        <!-- <div id="btn-ver-mas">
-            <a href="javascript:void(0)">
-                <button type="button" class="btn btn-primary ver-mas">Ver Más</button>
-            </a> 
-        </div>          -->
     </section>
 
     <!-- Banner -->
@@ -174,6 +154,26 @@
         <a href="https://www.ibanez.com/na/" target="_blank">
             <img src="images/Ibanez_Guitar_Banner_editado.jpg" alt="Banner Ibanez">
         </a>
+    </section>
+
+    <!-- Formulario de contacto -->
+    <section id="formulario">
+        <div class="form-container">
+            <h2>Contacto</h2>
+            <p>Si quieres contactarte con nosotros, llena el siguiente formulario y te responderemos a la brevedad:</p>
+            <br>
+            <form id="formulario">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Nombre" required>
+                <label for="apellido">Apellido:</label>
+                <input type="text" id="apellido" name="apellido" placeholder="Apellido" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Email" required>
+                <label for="mensaje">Mensaje:</label>
+                <textarea name="mensaje" id="mensaje" placeholder="Mensaje" required></textarea>
+                <button class="btn btn-primary" type="submit">Enviar</button>
+            </form>
+        </div>
     </section>
 
     <!-- Footer -->
@@ -250,5 +250,6 @@
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
 </body>
 </html>
