@@ -2,12 +2,6 @@
 
 # PROYECTO 3: Landing de Negocio
 
-**Tabla de contenido**
-
-[TOCM]
-
-[TOC]
-
 ## Planteamiento y Requisitos
 Este proyecto está enfocado en construir una página landing para un negocio.
 
